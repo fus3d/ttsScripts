@@ -1,8 +1,18 @@
 # ttsScripts
+Scripts to interact with Tabletop Simulator via the editor API. 
 
-A  collection of scripts that I've build for interacting with the Tabletop
-Simulator Editor API.  I hope to make these part of a neovim plugin if I ever
-get the skills to do so.
+Ideally these will be made into a neovim plugin at some point.
+
+Documentation on the TTS Editor API can be found at: https://api.tabletopsimulator.com/externaleditorapi/
+
+Functions implemented in these scripts
+
+get scripts and xml files via message ID 0
+save scripts and xml files via message ID 1
+get / put notebooks using lua script message ID 3
+run sample / test code using lua script message ID 3
+
+Be careful with directories, 'get' scripts will overwrite files without warning and could lose work. This will be fixed in the future.
 
 Files included:
 
